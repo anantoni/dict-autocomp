@@ -121,7 +121,7 @@ int main(int argc, char** argv)
 			recs = trie.getRecommendations(userInput);
 			hasRecs = recs.printRecommendations();
 			
-			if (hasRecs == -1)
+			if (hasRecs == -1) 
               break;
 			else 
               if (recs.getNumberOfRecommendations() == 1) {

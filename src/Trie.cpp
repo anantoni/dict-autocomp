@@ -63,7 +63,9 @@ void Trie::printWords(InnerNode* currentNode, string word, ofstream& ofs) {
 
 Recommendations Trie::getRecommendations(string word) {
 	InnerNode* currentNode = root;
-
+    if (word == "")
+      return Recommendations();
+    
 	transform(word.begin(), word.end(), word.begin(), ::tolower);
 	for(char& c : word) {
 		if ( currentNode->getChild(c-'a') == nullptr ) 
