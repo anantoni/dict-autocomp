@@ -1,9 +1,6 @@
 /******************** Trie functions ***********************/
 /***********************************************************/
 #include "class_definitions.hpp"
-class LeafNode;
-class InnerNode;
-class Recommendations;
 
 Trie::Trie() {
 	root = new InnerNode('/');

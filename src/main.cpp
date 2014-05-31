@@ -20,13 +20,10 @@ int newline_offset = 0;
 
 void console_flush(string line)
 {
-  //cout << "columns, in characters: " << w.ws_col << endl;
 #ifdef VT100
   /* Clear completions */
   printf("%c[2K", ASCII_ESC);
-  //cout << (double)((double)line.length() / (double)w.ws_col);
   int line_num = (int)ceil((double)(line.length()+newline_offset) / (double)w.ws_col);
-  //cout << line_num << endl;
   for (int i=0 ; i<line_num ; i++)
   /* Go to the beginning of the previous line */
     printf("%c[1A\r", ASCII_ESC);

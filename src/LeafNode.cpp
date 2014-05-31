@@ -1,7 +1,6 @@
 /***************** LeafNode functions ******************/
 /*******************************************************/
 #include "class_definitions.hpp"
-class InnerNode;
 
 LeafNode::LeafNode(InnerNode* parent, int frequency) {
 	this->frequency = frequency;

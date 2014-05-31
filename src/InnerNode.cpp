@@ -1,8 +1,6 @@
 /********************* InnerNode Function *************************/
 /*****************************************************************/
 #include "class_definitions.hpp"
-class LeafNode;
-class Recommendations;
 
 InnerNode::InnerNode(char label, InnerNode* parent) {
 	this->parent = parent;
