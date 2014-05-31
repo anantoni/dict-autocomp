@@ -1,0 +1,6 @@
+src/*~
+headers/*~
+*.txt
+*~
+typing-assistant
+*.o
